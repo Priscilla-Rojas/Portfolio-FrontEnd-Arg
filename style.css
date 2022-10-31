@@ -5,9 +5,40 @@ body{
   margin: 0;
 }
 header{
-  position: sticky;
   padding: 5px 15px;
 }
 .logo{
   color: white;
+}
+a,
+a:link,
+a:visited{
+  color: white;
+  height: max-content;
+  text-decoration: none;
+}
+.bi{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin: 0 5px;
+} 
+
+@media  (max-width: 870px){
+  
+
+}
+@media  (max-width: 767px){
+  .logo{
+    order: 2;
+  }
+  .login{
+    order: 3;
+  }
+  .hamburger{
+    order: 1;
+  }
+  .desplegable{
+    order: 4
+  }
 }
