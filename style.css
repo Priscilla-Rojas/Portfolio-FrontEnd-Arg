@@ -1,0 +1,13 @@
+body{
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+header{
+  position: sticky;
+  padding: 5px 15px;
+}
+.logo{
+  color: white;
+}
