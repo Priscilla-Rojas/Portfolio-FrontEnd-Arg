@@ -4,11 +4,12 @@ body{
   box-sizing: border-box;
   margin: 0;
 }
-header{
-  padding: 5px 15px;
-}
 .logo{
   color: white;
+}
+header,
+main{
+  background-color: black;
 }
 a,
 a:link,
@@ -17,26 +18,118 @@ a:visited{
   height: max-content;
   text-decoration: none;
 }
+#About{
+  padding-top: 80px;
+}
+.redes-nav{
+  width: max-content;
+  position: fixed;
+  bottom: 150px;
+  left: 10px;
+}
+.redes-nav::before{
+  content: '';
+  width: 1px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  left: 60%;
+  bottom: -150px;
+}
+.redes-nav ul li a > .icon{
+  width: 30px;
+  height: 30px;
+  stroke: white;
+}
+.redes-nav > .nav-item{
+  width: max-content;
+  height: max-content;
+  margin: 5px auto;
+}
+.primary-menu{
+  margin: 0 auto;
+}
 .bi{
   width: 30px;
   height: 30px;
   fill: white;
   margin: 0 5px;
 } 
+#Home{
+  min-height: calc(100vh - 82px);
+  background-color: black;
+  max-height: 90vh;
+  overflow: hidden;
+}
+.about > img{
+  position: relative;
+  max-width: 350px;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 41% 59% 31% 69% / 74% 25% 75% 26%  ;
+  border: 1px solid transparent;
+  background-color: palevioletred;
+  overflow: hidden;
+  filter: blur();
+}
+.about > img::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgb(233, 0, 0);
+}
+.about-text{
+  width: max-content;
+  position: relative;
+  font-size: 2rem;
+}
+.about-text::before{
+  content: '';
+  width: 300px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 110%;
 
+}
+.nav-link.active,
+.active{
+  color: palevioletred !important;
+  text-decoration: underline;
+}
+.hi{
+  font-size: 1.5rem;
+}
+.text{
+  font-size: 1.5rem;
+}
+@media  (min-width: 870px){
+  header{
+    padding: 0px 15px;
+  }
+}
 @media  (max-width: 870px){
   
 
 }
 @media  (max-width: 767px){
   .logo{
-    order: 2;
+    order: 3;
   }
   .login{
-    order: 3;
+    order: 4;
   }
   .hamburger{
     order: 1;
+  }
+  .redes{
+    order: 2;
+    justify-self: flex-start;
   }
   .desplegable{
     order: 4
