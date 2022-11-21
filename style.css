@@ -1,8 +1,9 @@
 body{
-  width: 100%;
+  width: 100vw;
   position: relative;
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 .logo{
   color: white;
@@ -65,14 +66,13 @@ a:visited{
   margin: 0 5px;
 } 
 #Home{
-  min-height: calc(100vh - 82px);
+  min-height: max-content;
   background-color: black;
-  max-height: 90vh;
   overflow: hidden;
 }
 .about > img{
   position: relative;
-  max-width: 350px;
+  /* max-width: 350px; */
   max-height: 500px;
   overflow: hidden;
   border-radius: 41% 59% 31% 69% / 74% 25% 75% 26%  ;
@@ -119,12 +119,17 @@ a:visited{
   filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
 -webkit-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
 -moz-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
-  transition: all .2s linear;
+  /* transition: all .2s linear; */
 }
 #Proyects img:hover{
   filter: none;
 }
-
+#Proyects > .container > div{
+  margin: 70px auto;
+}
+#Proyects > .container > div> div{
+  min-width: 250px;
+}
 
 @media  (min-width: 870px){
   header{

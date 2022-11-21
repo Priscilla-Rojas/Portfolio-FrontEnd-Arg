@@ -13,7 +13,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
-  <header class="d-flex flex-column justify-content-between align-items-center sticky-top ">
+  <header class="d-flex w-100 flex-column justify-content-between align-items-center sticky-top ">
     <nav class="navbar navbar-expand-md w-md-50 navbar-dark w-100" id="navbar">
       <div class="container-fluid w-100 flex-wrap justify-content-md-betwent p-0">
         <section class="navbar-brand logo">
@@ -44,7 +44,7 @@
             </li>
           </ul>
           <hr class="bg-light ms-3 d-flex d-sm-none">
-          <ul class="navbar-nav flex-row flex-wrap text-light redes ms-3 d-flex d-sm-none">
+          <ul class="navbar-nav flex-row flex-wrap text-light redes ms-3 d-flex d-md-none">
             <li class="nav-item col-4 col-md-aut text-center">
               <a href="" title="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -82,7 +82,7 @@
     </nav>
   </header>
   <main>
-    <section class="redes-nav">
+    <section class="redes-nav d-none d-md-block">
       <ul class="navbar-nav flex-column flex-nowrap text-light redes">
         <li class="nav-item col-4 col-md-aut text-center m-2">
           <a href="" title="Facebook">
@@ -121,7 +121,7 @@
     </section>
     <section id="About" class="">
       <div class="container col-xxl-8 px-4 py-4">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-center overflow-hidden">
           <div class="col-10 col-sm-8 col-lg-5 about p-0">
             <img src="/assets/img/perfil.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
               loading="lazy">
@@ -135,28 +135,28 @@
       </div>
     </section>
     <section id="Proyects">
-      <div class="container col-xxl-8 px-4 py-4 container-proyect ">
+      <div class="container col-xxl-8 py-4 container-proyect overflow-hidden">
         <h2 class="proyects-Subtitle">Some projects</h2>
-          <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end my-5">
+          <div class="row container flex-lg-row align-items-center g-ms-5 py-0 justify-content-end">
             <div class="col text-light">
               <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end containerimg">
                 <img src="/assets/imgs-proyects/soyHostel.png" class="imgProyect d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
               loading="lazy">
               </div>
             </div>
-            <div class="col text-light text-end">
+            <div class="col text-light text-center text-md-end">
               <h3>Soy Hostel</h3>
-              <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt, mollitia incidunt similique, in qui culpa molestiae dicta distinctio quo iste! Ex aliquid minima illo ea hic laboriosam numquam enim?</p>
+              <p class="text-center text-md-end"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sunt, mollitia incidunt similique, in qui culpa molestiae dicta distinctio quo iste! Ex aliquid minima illo ea hic laboriosam numquam enim?</p>
               <p>PostgreSql, Node, Express, JWT, React</p>
-              <ul class="navbar-nav flex-row flex-nowrap text-light redes justify-content-end">
+              <ul class="navbar-nav flex-row flex-nowrap text-light redes justify-content-center justify-content-md-end">
                 <li class="nav-item col-4 col-md-auto text-center m-2">
                   <a href="" title="Git Hub">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon"><title>Redirect </title>
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   </a>
                 </li>
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
+                  <a href="" title="Redirect">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"  viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
@@ -168,7 +168,7 @@
               </ul>
             </div>
             </div>
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-end my-5-">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-end-">
             <div class="col text-light">
               <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end">
                 <img src="/assets/imgs-proyects/recipes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
@@ -181,13 +181,13 @@
               <p>PostgreSql, Node, Express, JWT, React</p>
               <ul class="navbar-nav flex-row flex-nowrap text-light redes ">
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon"><title>Redirect </title>
+                  <a href="" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   </a>
                 </li>
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
+                  <a href="" title="Redirect">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"  viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
@@ -199,7 +199,7 @@
               </ul>
             </div>
             </div>
-          <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end my-5">
+          <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end">
             <div class="col text-light">
               <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end">
                 <img src="/assets/imgs-proyects/fundacion-colombiavive.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
@@ -212,13 +212,13 @@
               <p>PostgreSql, Node, Express, JWT, React</p>
               <ul class="navbar-nav flex-row flex-nowrap text-light redes justify-content-end">
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon"><title>Redirect </title>
+                  <a href="" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   </a>
                 </li>
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
+                  <a href="" title="Redirect">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"  viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
@@ -230,7 +230,7 @@
               </ul>
             </div>
             </div>
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-end my-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-0 justify-content-end">
             <div class="col text-light">
               <div class="row flex-lg-row align-items-center g-5 py-0 justify-content-end">
                 <img src="/assets/imgs-proyects/san-martin.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
@@ -243,13 +243,13 @@
               <p>PostgreSql, Node, Express, JWT, React</p>
               <ul class="navbar-nav flex-row flex-nowrap text-light redes ">
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon"><title>Redirect </title>
+                  <a href="" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github icon">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   </a>
                 </li>
                 <li class="nav-item col-4 col-md-auto text-center m-2">
-                  <a href="" title="Git Hub">
+                  <a href="" title="Redirect">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"  viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
