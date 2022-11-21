@@ -1,0 +1,160 @@
+body{
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+.logo{
+  color: white;
+}
+header,
+main{
+  background-color: black;
+}
+a,
+a:link,
+a:visited{
+  color: white;
+  height: max-content;
+  text-decoration: none;
+}
+#About,
+#Proyects{
+  padding-top: 80px;
+}
+.redes-nav{
+  width: max-content;
+  position: fixed;
+  bottom: 150px;
+  left: 10px;
+}
+.redes-nav::before{
+  content: '';
+  width: 1px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  left: 60%;
+  bottom: -150px;
+}
+.redes-nav ul li a > .icon,
+.container-proyect ul li a > .icon{
+  width: 30px;
+  height: 30px;
+  stroke: white;
+}
+.redes-nav > .nav-item{
+  width: max-content;
+  height: max-content;
+  margin: 5px auto;
+}
+.primary-menu{
+  margin: 0 auto;
+}
+.nav-link:hover{
+  color: palevioletred !important;
+}
+.redes > li > a svg:hover{
+  stroke: rgba(235, 140, 172, 0.704);
+  transform: scale(1.1);
+}
+.bi{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin: 0 5px;
+} 
+#Home{
+  min-height: max-content;
+  background-color: black;
+  overflow: hidden;
+}
+.about > img{
+  position: relative;
+  /* max-width: 350px; */
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 41% 59% 31% 69% / 74% 25% 75% 26%  ;
+  border: 1px solid transparent;
+  background-color: palevioletred;
+  overflow: hidden;
+  filter: blur();
+}
+.about-Subtitle,
+.proyects-Subtitle{
+  width: max-content;
+  position: relative;
+  font-size: 2rem;
+  color: white;
+}
+.about-Subtitle::before,
+.proyects-Subtitle::before{
+  content: '';
+  width: 300px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 110%;
+}
+
+#About .text{
+  font-size: 1.2rem;
+  margin: 30px 0;
+}
+.nav-link.active,
+.active{
+  color: #d87093c6 !important;
+  text-decoration: underline;
+}
+.hi{
+  font-size: 1.5rem;
+}
+.text{
+  font-size: 1.5rem;
+}
+
+#Proyects img{
+  filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
+-webkit-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
+-moz-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
+  /* transition: all .2s linear; */
+}
+#Proyects img:hover{
+  filter: none;
+}
+#Proyects > .container > div{
+  margin: 70px auto;
+}
+#Proyects > .container > div> div{
+  min-width: 250px;
+}
+
+@media  (min-width: 870px){
+  header{
+    padding: 0px 15px;
+  }
+}
+@media  (max-width: 870px){
+  
+
+}
+@media  (max-width: 767px){
+  .logo{
+    order: 3;
+  }
+  .login{
+    order: 4;
+  }
+  .hamburger{
+    order: 1;
+  }
+  .redes{
+    order: 2;
+    justify-self: flex-start;
+  }
+  .desplegable{
+    order: 4
+  }
+}
