@@ -1,9 +1,14 @@
+:root{
+  --pink: palevioletred;
+}
 body{
   width: 100vw;
   position: relative;
   box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
+  color: white;
+  
 }
 .logo{
   color: white;
@@ -20,7 +25,9 @@ a:visited{
   text-decoration: none;
 }
 #About,
-#Proyects{
+#Proyects,
+#Skills,
+#Contact{
   padding-top: 80px;
 }
 .redes-nav{
@@ -66,7 +73,8 @@ a:visited{
   margin: 0 5px;
 } 
 #Home{
-  min-height: max-content;
+  min-height: calc(100vh - 160px);
+  height: max-content;
   background-color: black;
   overflow: hidden;
 }
@@ -82,14 +90,17 @@ a:visited{
   filter: blur();
 }
 .about-Subtitle,
-.proyects-Subtitle{
+.proyects-Subtitle,
+.skills-Subtitle,
+.contac-subtitle{
   width: max-content;
   position: relative;
   font-size: 2rem;
   color: white;
 }
 .about-Subtitle::before,
-.proyects-Subtitle::before{
+.proyects-Subtitle::before,
+.skills-Subtitle::before{
   content: '';
   width: 300px;
   height: 1px;
@@ -119,7 +130,7 @@ a:visited{
   filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
 -webkit-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
 -moz-filter: grayscale(47%) sepia(100%) brightness(93%) hue-rotate(263deg) saturate(344%) opacity(83%) contrast(116%) invert(6%);
-  /* transition: all .2s linear; */
+  transition: all .2s linear;
 }
 #Proyects img:hover{
   filter: none;
@@ -130,15 +141,113 @@ a:visited{
 #Proyects > .container > div> div{
   min-width: 250px;
 }
+#Skills{
+  color: white;
+}
+#Skills p{
+  color: white;
+  font-size: 1.1rem;
+}
+.container-skills{
+  width: 80%;
+  margin: 80px auto 0;
+}
+.container-technologies-section{
+  width: 80%;
+  margin: 60px auto 0px;
+}
+.container-technologies-section > h2{
+  width: 50vw;
+  min-width: 250px;
+  max-width: 500px;
 
+}
+.container-skills > div > h3{
+  width: 30%;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: left;
+  margin: 0 20px;
+}
+.icons{
+  margin: 0 10px;
+  text-align: center;
+  filter: brightness(0.6);
+  cursor: pointer;
+}
+.icons > img{
+  width: 40px;
+  height: 40px;
+}
+.icons:hover{
+  filter: brightness(1.5);
+}
+.icons h3{
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5px;
+  font-weight: 300;
+}
+#Contact{
+  min-height: 80vh;
+  height: max-content;
+  
+}
+.contac-subtitle{
+  margin: 0 auto;
+}
+.contac-subtitle::after{
+  content: '';
+  width: 600px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 110%;
+}
+.contac-subtitle::before{
+  content: '';
+  width: 600px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  right: 110%;
+}
+
+@media  (max-width: 1200px){
+  .container-technologies-section{
+    justify-content: center;
+    align-items: center;
+  }
+  .container-technologies-section > div{
+    flex-flow: wrap;
+  }
+  .icons{
+    margin: 10px;
+  }
+}
 @media  (min-width: 870px){
   header{
     padding: 0px 15px;
   }
 }
 @media  (max-width: 870px){
-  
-
+  .container-technologies-section{
+    flex-flow: wrap;
+    margin: 10px auto;
+  }
+  .container-skills > div > h3{
+    width: 100%;
+    min-width: 200px;
+    max-width: none;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .container-technologies-section > div{
+    width: 100%;
+    justify-content: center;
+  }
 }
 @media  (max-width: 767px){
   .logo{
