@@ -2,7 +2,8 @@
   --pink: palevioletred;
 }
 body{
-  width: 100vw;
+  
+  width: 100%;
   position: relative;
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +14,17 @@ body{
 .logo{
   color: white;
 }
+.logo a:hover{
+  color: var(--pink);
+}
 header,
 main{
+  margin: 0 auto;
+  max-width: 1500px;
   background-color: black;
+}
+main{
+  position: relative;
 }
 a,
 a:link,
@@ -23,6 +32,20 @@ a:visited{
   color: white;
   height: max-content;
   text-decoration: none;
+}
+.cv,
+.cv:visited{
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cv:hover{
+  color: white;
+  background-color: var(--pink);
 }
 #About,
 #Proyects,
@@ -213,6 +236,37 @@ a:visited{
   position: absolute;
   top: 60%;
   right: 110%;
+}
+#Contact > div{
+  height: 50vh;
+  min-height: max-content;
+
+}
+#Contact > div > p{
+  color: white;
+  width: 70%;
+  min-width: 280px;
+  margin: 50px auto;
+  text-align: center;
+}
+.contact-Icons li a svg{
+width:45px;
+height:45px;
+stroke: black;
+transform: all .5s linear;
+}
+.contact-Icons li a{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transform: all .5s linear;
+}
+.contact-Icons li a:hover{
+  background-color: var(--pink);
+  padding: 20px;
+}
+.contact-Icons li a:hover svg{
+  stroke: white;
 }
 
 @media  (max-width: 1200px){
