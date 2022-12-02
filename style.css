@@ -2,7 +2,8 @@
   --pink: palevioletred;
 }
 body{
-  width: 100vw;
+  
+  width: 100%;
   position: relative;
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +14,17 @@ body{
 .logo{
   color: white;
 }
+.logo a:hover{
+  color: var(--pink);
+}
 header,
 main{
+  margin: 0 auto;
+  max-width: 1500px;
   background-color: black;
+}
+main{
+  position: relative;
 }
 a,
 a:link,
@@ -23,6 +32,21 @@ a:visited{
   color: white;
   height: max-content;
   text-decoration: none;
+}
+.cv,
+.cv:visited{
+  background-color: white;
+  color: black !important;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  order: 3;
+}
+.cv:hover{
+  color: white;
+  background-color: var(--pink);
 }
 #About,
 #Proyects,
@@ -71,7 +95,18 @@ a:visited{
   height: 30px;
   fill: white;
   margin: 0 5px;
-} 
+}
+.bi-envelope{
+  /* stroke: black; */
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  border: 0px;
+}
+.bi-envelope path{
+  fill: black;
+  padding: 2px;
+}
 #Home{
   min-height: calc(100vh - 160px);
   height: max-content;
@@ -140,6 +175,11 @@ a:visited{
 }
 #Proyects > .container > div> div{
   min-width: 250px;
+}
+#Proyects .icon{
+  width: 30px;
+  height: 30px;
+  stroke: white;
 }
 #Skills{
   color: white;
@@ -214,6 +254,37 @@ a:visited{
   top: 60%;
   right: 110%;
 }
+#Contact > div{
+  min-height: 50vh;
+  height: max-content;
+
+}
+#Contact > div > p{
+  color: white;
+  width: 70%;
+  min-width: 280px;
+  margin: 50px auto;
+  text-align: center;
+}
+.contact-Icons li a svg{
+width:45px;
+height:45px;
+stroke: black;
+transform: all .5s linear;
+}
+.contact-Icons li a{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transform: all .5s linear;
+}
+.contact-Icons li a:hover{
+  background-color: var(--pink);
+  padding: 20px;
+}
+.contact-Icons li a:hover svg{
+  stroke: white;
+}
 
 @media  (max-width: 1200px){
   .container-technologies-section{
@@ -259,6 +330,13 @@ a:visited{
   .hamburger{
     order: 1;
   }
+  .hamburger:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+    border: none;
+  }
+
   .redes{
     order: 2;
     justify-self: flex-start;
