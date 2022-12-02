@@ -36,12 +36,13 @@ a:visited{
 .cv,
 .cv:visited{
   background-color: white;
-  color: black;
+  color: black !important;
   padding: 5px 15px;
   border-radius: 5px;
   margin: 10px;
   font-weight: 500;
   cursor: pointer;
+  order: 3;
 }
 .cv:hover{
   color: white;
@@ -94,7 +95,18 @@ a:visited{
   height: 30px;
   fill: white;
   margin: 0 5px;
-} 
+}
+.bi-envelope{
+  /* stroke: black; */
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  border: 0px;
+}
+.bi-envelope path{
+  fill: black;
+  padding: 2px;
+}
 #Home{
   min-height: calc(100vh - 160px);
   height: max-content;
@@ -163,6 +175,11 @@ a:visited{
 }
 #Proyects > .container > div> div{
   min-width: 250px;
+}
+#Proyects .icon{
+  width: 30px;
+  height: 30px;
+  stroke: white;
 }
 #Skills{
   color: white;
@@ -238,8 +255,8 @@ a:visited{
   right: 110%;
 }
 #Contact > div{
-  height: 50vh;
-  min-height: max-content;
+  min-height: 50vh;
+  height: max-content;
 
 }
 #Contact > div > p{
@@ -313,6 +330,13 @@ transform: all .5s linear;
   .hamburger{
     order: 1;
   }
+  .hamburger:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+    border: none;
+  }
+
   .redes{
     order: 2;
     justify-self: flex-start;
